@@ -6,7 +6,8 @@
 
 - http://zitianzhou.com
 - http://zitianzhou.com/aau/wnm608/zitian.zhou
+- http://zitianzhou.com/aau/wnm608/Recipe.html
 
 - git add .
-- git commit -m "bbbb"
+- git commit -m "xxx"
 - git push origin main
