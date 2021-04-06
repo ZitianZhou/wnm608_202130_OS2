@@ -1,0 +1,49 @@
+.dinnerware {
+	width: 100%;
+	margin: 3em 2.5em 0 0;
+}
+
+/* PRODUCT IN LIST */
+.product {
+   margin:0;
+   /*padding:1em;*/
+   border-radius:0.1em;
+   position:relative;
+   overflow:hidden;
+   background-color:white;
+   display:inline-block;
+   transition:all 0.3s;
+}
+.product:hover {
+   text-decoration:none;
+   box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.product-image img {
+   max-width:100%;
+   vertical-align:middle;
+}
+.product-caption {
+  vertical-align:middle;
+   padding:1em 2em;
+   background-color:var(--color-neutral-light);
+   border-top: 0.3em solid var(--color-neutral-medium);
+  width: 700px;
+}
+.product-price {
+   font-size:1.1em;
+   padding: 0.7em 0;
+   color:var(--color-neutral-dark);
+}
+.product-title {
+   font-size:1.1em;
+   padding: 0.7em 0 1em 0;
+   border-bottom: 0.1em solid var(--color-neutral-medium);
+}
+
+
+.product-info {
+   font-size:0.95em;
+   color:#252525;
+   padding: 1.1em 0 0 0;
+
+}

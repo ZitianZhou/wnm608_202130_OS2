@@ -1,22 +1,26 @@
-ml>
+<!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" href="productcss/productstyle.css"/>
+  <link rel="stylesheet" href="./css/my.css"/>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container" style="width: 100%;margin: 0;padding: 0;">
 <div class="main">
   <!-- header>h1+p -->
   <!-- cmd + / -->
   <header class="navbar">
-    <div class="container display-flex flex-align-center navHeight">
+    <div class="container  navHeight">
       <div class="title">
         <h1>Ps5 Home</h1>
       </div>
 
-      <div class="flex-stretch"></div>
+
 
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
       <nav class="nav flex-none">
@@ -26,19 +30,33 @@ ml>
           <li><a href="#game">PS5 Game</a></li>
 
         </ul>
+        <button type="button" class=" bt btn btn-outline-secondary ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <span class="visually-hidden">cart</span>
+        </button>
+        <button type="button" class="bt btn btn-outline-danger ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+          search
+        </button>
       </nav>
+      <div class="flex-stretch"></div>
+
+
     </div>
   </header>
 
-
-  <div class="screen">
+  <div class="screen view-window flex-align-center flex-justify-center">
     <div class="items">
       <h2>
         Come Here And Look For It.You Don't Know About The PS5
       </h2>
     </div>
-
   </div>
+
   <div class="about">
     <article id="dig" >
       <h2><a name="about">PS5 Host (Digital Edition)</a></h2>
@@ -99,7 +117,6 @@ ml>
 
   </div>
   <div class="game">
-
     <article id="game">
     <div class="lists">
       <h2>PS5 game </h2>
