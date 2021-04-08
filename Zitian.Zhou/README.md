@@ -4,9 +4,9 @@
 
 ### Important links
 
-- http://zitianzhou.com
-- http://zitianzhou.com/aau/wnm608/Zitian.Zhou
-- http://zitianzhou.com/aau/wnm608/Recipe.html
+- http://zhouzitian.com
+- http://zhouzitian.com/aau/wnm608/Zitian.Zhou
+- http://zhouzitian.com/aau/wnm608/Recipe.html
 
 - git add .
 - git commit -m "xxx"
