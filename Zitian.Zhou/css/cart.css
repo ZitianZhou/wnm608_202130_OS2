@@ -1,0 +1,72 @@
+html,body{
+  margin:0px;
+  padding:0px;
+  padding-bottom:180px
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.button{
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(62, 71, 202);
+  padding: 12px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  border:none;
+  cursor: pointer;
+  outline:none
+}
+.reduce{
+  
+ 
+  padding: 6px 12px;
+  border-radius: 5px;
+  
+}
+.plus{
+  
+  
+  padding: 6px 12px;
+  border-radius: 5px;
+  
+}
+.quantity{
+    margin:0px 5px
+}
+
+
+.payButton{
+  width:100%;
+  text-align:center;
+  margin-top:15px
+}
+.payButton .button{
+  width:300px
+}
+.banner{
+  width:100%
+}
+.title{
+  text-align:center
+}

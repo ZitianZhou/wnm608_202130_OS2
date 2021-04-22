@@ -1,0 +1,32 @@
+[
+    {
+        "ID":"A120301",
+        "username":"adminUser1",
+        "password":"123",
+        "role":"admin"
+    },
+    {
+        "ID":"A120302",
+        "username":"customerUser2",
+        "password":"123",
+        "role":"customer"
+    },
+    {
+        "ID":"A120303",
+        "username":"customerUser3",
+        "password":"123",
+        "role":"customer"
+    },
+    {
+        "ID":"A120304",
+        "username":"customerUser4",
+        "password":"123",
+        "role":"customer"
+    },
+    {
+        "ID":"A120305",
+        "username":"customerUser5",
+        "password":"123",
+        "role":"customer"
+    }
+]

@@ -1,0 +1,90 @@
+<?php
+    $data = file_get_contents("data.json");
+    $dataArr = json_decode($data,1);
+    
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="user.css">
+    <title>User Page</title>
+</head>
+<body>
+    <img src="./img/banner.jpg" alt="" class="banner">
+    <h1 class="title">User Management</h1>
+    <div class="layout">
+        <table class="table">
+            <tr>
+                <td>
+                    ID
+                </td>
+                <td>
+                    Username
+                </td>
+                <td>
+                    Password
+                </td>
+                <td>
+                    Role
+                </td>
+                <td>
+                    Operation
+                </td>
+            </tr>
+            <?php
+                foreach($dataArr as $row){
+                    echo "<tr><td>".$row['ID']."</td><td>".$row['username']."</td><td>".$row['password']."</td>
+                    <td>".$row['role']."</td><td><button class='button' onclick='openModal(this)'>Edit</button></td><tr>";
+                }
+            ?>
+            
+
+        </table>
+    </div>
+
+    <div id="modal" class="modal-bg">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Edit User Infomation</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-div">
+                <label for="">Username</label>
+                <input type="text" class="form-style" id="username">
+                </div>
+                <div class="form-div">
+                <label for="">Password</label>
+                <input type="text" class="form-style" id="password">
+                </div>
+                <div class="form-div">
+                <label for="">Role</label>
+                <input type="text" class="form-style" id="role">
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:right;width:100%">
+                <button class="button" type="button" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+function openModal(obj){
+        var username = $(obj).parents("tr").find("td").eq(1).text();
+        var password = $(obj).parents("tr").find("td").eq(2).text();
+        var role = $(obj).parents("tr").find("td").eq(3).text();
+        $("#username").val(username);
+        $("#password").val(password);
+        $("#role").val(role);
+        $("#modal").fadeIn();
+    }
+
+    function closeModal(){
+        $("#modal").fadeOut();
+    }
+</script>
