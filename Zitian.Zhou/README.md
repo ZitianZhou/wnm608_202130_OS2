@@ -4,9 +4,10 @@
 
 ### Important links
 
-- http://zhouzitian.com
-- http://zhouzitian.com/aau/wnm608/Zitian.Zhou/product.html
-- http://zhouzitian.com/aau/wnm608/Recipe.html
+- 
+- http://zhouzitian.com/aau/wnm608/Zitian.Zhou/index.php
+- https://github.com/ZitianZhou/wnm608_202130_OS2
+- 
 
 - git add .
 - git commit -m "xxx"
