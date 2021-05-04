@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./jquery.min.js"></script>
-    <link rel="stylesheet" href="user.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/user.css">
     <title>User Page</title>
 </head>
 <body>
@@ -66,6 +66,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align:right;width:100%">
+            <button class="button" type="button" onclick="updateForm()">Submit</button>
                 <button class="button" type="button" onclick="closeModal()">Close</button>
             </div>
         </div>
@@ -86,5 +87,10 @@ function openModal(obj){
 
     function closeModal(){
         $("#modal").fadeOut();
+    }
+
+    function updateForm(){
+        alert("Update successfully!");
+        closeModal();
     }
 </script>
