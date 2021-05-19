@@ -5,6 +5,7 @@
     // $baseUrl .= isset($_SERVER['SCRIPT_NAME']) ? dirname($_SERVER['SCRIPT_NAME']) : dirname(getenv('SCRIPT_NAME'));
     return $baseUrl.'/'.$uri;
   }
+  $db = mysqli_connect("localhost","root","root123","ps5");
   $baseUrl = getBaseUrl();
 ?>
 
